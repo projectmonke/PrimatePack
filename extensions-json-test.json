@@ -13,7 +13,7 @@
     {
       "id": "primatepack",
       "name": "The Primate Pack",
-      "description": "Collection of tweaks and improvements for Caido.",
+      "description": "A suite of plugins for Caido developed by Monke (@monkehack).",
       "author": "monke",
       "url": "https://github.com/projectmonke/PrimatePack/main",
       "versionUrl": "https://raw.githubusercontent.com/projectmonke/PrimatePack/main/version.txt",
