@@ -157,22 +157,17 @@ var monkeTab = () => {
 
 // Create Pets UI
 var monkeTools = () => {
+ 
+  Caido.navigation.addPage("/primatepack/settings", {
+    body: monkeTab()
+  });
+    
+  Caido.sidebar.registerItem("Settings", "/primatepack/settings", {
+    icon: "fas fa-cat",
+    group: `Primate Pack`,
+  });
 
   if (getMonkeSetting("caido_pets_enabled") === "true"){
-    // Adds the tab
-    const settingsNavigation = document.querySelector(
-      ".c-settings .p-menubar-root-list"
-    );
-    let customTabMonke = {
-      name: "The Primate Pack",
-      icon: '<i class="c-icon fas fa-cat"></i>',
-      id: "monketools",
-      content: monkeTab()
-    }
-
-    settingsNavigation.appendChild(customTabMonke);
-
-
     Caido.sidebar.registerItem("", "#", {
       icon: "",
       group: `<img id='gifImage' width='200' height='200'>`,
