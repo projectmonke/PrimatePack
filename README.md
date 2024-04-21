@@ -1,7 +1,7 @@
 # PrimatePack
 The Primate Pack is a suite of extensions for Caido.
 
-## Requirements
+## Requirements
 - This extension can be installed using [EvenBetterExtensions](https://github.com/bebiksior/EvenBetterExtensions).
 - EvenBetter is required for this extension to work.
 
