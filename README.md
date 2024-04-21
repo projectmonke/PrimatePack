@@ -2,7 +2,7 @@
 The Primate Pack is a suite of extensions for Caido.
 
 ## Plugins
-- Caido Pets: Add a pet or custom GIF to Caido.
+- **Caido Pets**: Add a pet or custom GIF to Caido.
 
 ## Requirements
 - This extension can be installed using [EvenBetterExtensions](https://github.com/bebiksior/EvenBetterExtensions).
