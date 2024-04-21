@@ -1,4 +1,4 @@
-# PrimatePack
+# The Primate Pack
 The Primate Pack is a suite of extensions for Caido.
 
 ## Plugins
