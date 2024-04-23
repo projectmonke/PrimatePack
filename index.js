@@ -23,17 +23,17 @@ var setMonkeSetting = (settingName, value) => {
 
 var createNotionTabHTML = () => {
   return `
- <div class="even-better__settings" id="evenbetter-settings-content">
-  <header>
-    <div class="header-title"><h1>Notion</h1></div>
-    <div class="header-description">Notion Editor</div>
-  </header>
-  <main>
-  <iframe src="https://www.example.com"/>
-  </main>
-</div>
-`
-}
+    <div class="even-better__settings" id="evenbetter-settings-content">
+      <header>
+        <div class="header-title"><h1>Notion</h1></div>
+        <div class="header-description">Notion Integration</div>
+      </header>
+      <main>
+        <iframe src="https://www.example.com"/>
+      </main>
+    </div>
+  `;
+};
 
 // Settings Tab HTML
 var createMonkeTabHTML = () => {
@@ -182,7 +182,9 @@ var monkeTab = () => {
 
 var notionTab = () => {
   const notionTabHTML = document.createElement("div");
-  notionTab.innerHTML = createNotionTabHTML();
+  notionTabHTML.innerHTML = createNotionTabHTML();
+
+  return notionTabHTML;
 }
 
 // Create Pets UI
