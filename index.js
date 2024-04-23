@@ -29,7 +29,7 @@ var createNotionTabHTML = () => {
         <div class="header-description">Notion Integration</div>
       </header>
       <main>
-        <iframe src="https://www.example.com" class="c-evenbetter_table-container"/>
+        <iframe src="https://www.example.com" class="c-evenbetter_table-container" style="width=100%;height=100%;"/>
       </main>
     </div>
   `;
