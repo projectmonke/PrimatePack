@@ -16,9 +16,9 @@
       "description": "A suite of plugins for Caido developed by Monke (@monkehack).",
       "author": "monke",
       "url": "https://github.com/projectmonke/PrimatePack",
-      "versionUrl": "https://raw.githubusercontent.com/projectmonke/PrimatePack/tree/dev/version.txt",
-      "customJSUrl": "https://raw.githubusercontent.com/projectmonke/PrimatePack/tree/dev/index.js",
-      "customCSSUrl": "https://raw.githubusercontent.com/projectmonke/PrimatePack/tree/dev/style.css"
+      "versionUrl": "https://raw.githubusercontent.com/projectmonke/PrimatePack/dev/version.txt",
+      "customJSUrl": "https://raw.githubusercontent.com/projectmonke/PrimatePack/dev/index.js",
+      "customCSSUrl": "https://raw.githubusercontent.com/projectmonke/PrimatePack/dev/style.css"
     }
   ]
 }
