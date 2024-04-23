@@ -23,9 +23,15 @@ var setMonkeSetting = (settingName, value) => {
 
 var createNotionTabHTML = () => {
   return `
-<iframe src="https://www.example.com"/>
+    <div class="even-better__settings" id="evenbetter-settings-content">
+      <header>
+        <div class="header-title"><h1>The Primate Pack - Settings</h1></div>
+        <div class="header-description">Primate Pack settings.</div>
+      </header>
+    </div>
 `
 }
+
 // Settings Tab HTML
 var createMonkeTabHTML = () => {
   const monkeFeatures = [
