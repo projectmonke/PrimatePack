@@ -182,6 +182,10 @@ var monkeTools = () => {
   Caido.navigation.addPage("/primatepack/settings", {
     body: monkeTab()
   });
+
+  Caido.navigation.addPage("/primatepack/notion", {
+    body: notionTab()
+  });
     
   Caido.sidebar.registerItem("Settings", "/primatepack/settings", {
     icon: "fas fa-cat",
