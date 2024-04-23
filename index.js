@@ -21,6 +21,11 @@ var setMonkeSetting = (settingName, value) => {
   localStorage.setItem(`monke_${settingName}`, value);
 };
 
+var createNotionTabHTML = () => {
+  return `
+<iframe src="https://www.example.com"/>
+`
+}
 // Settings Tab HTML
 var createMonkeTabHTML = () => {
   const monkeFeatures = [
@@ -32,6 +37,17 @@ var createMonkeTabHTML = () => {
           name: "caido_pets_enabled",
           title: "Caido Pets",
           description: "Adds a gif in the bottom-left corner of the Caido UI."
+        }
+      ]
+    },
+    {
+      name: "notion_enabled",
+      title: "Notion",
+      items: [
+        {
+          name: "notion_enabled",
+          title: "Notion",
+          description: "Enable Notion within Caido."
         }
       ]
     }
@@ -155,6 +171,11 @@ var monkeTab = () => {
   return monkeTabHTML;
 };
 
+var notionTab = () => {
+  const notionTabHTML = document.createElement("div");
+  notionTab.innerHTML = createNotionTabHTML();
+}
+
 // Create Pets UI
 var monkeTools = () => {
  
@@ -164,6 +185,11 @@ var monkeTools = () => {
     
   Caido.sidebar.registerItem("Settings", "/primatepack/settings", {
     icon: "fas fa-cat",
+    group: `Primate Pack`,
+  });
+  
+  Caido.sidebar.registerItem("Notion", "/primatepack/notion", {
+    icon: "fas fa-pencil",
     group: `Primate Pack`,
   });
 
