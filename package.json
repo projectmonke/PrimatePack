@@ -1,0 +1,23 @@
+{
+  "name": "theprimatepack",
+  "version": "1.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "bun run build.ts"
+  },
+  "author": "monke <monke@wearehackerone.com>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-style-loader": "^0.4.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@bebiks/evenbetter-api": "^1.1.0",
+    "@caido/sdk-frontend": "^0.35.0",
+    "crypto": "^1.0.1",
+    "node-rsa": "^1.1.1"
+  }
+}
