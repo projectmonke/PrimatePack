@@ -182,42 +182,11 @@ const primatePackActivityHTML = () => {
             <div class="settings-box__header-description">Pet Configuration</div>
           </div>
           <div class="settings-box__content">
-            <div class="c-text-input">
-              <div class="c-text-input__outer">
-                <u>GIF URL</u>
-                <div class="c-text-input__inner">
-                  <input type="text" placeholder="https://www.example.com" spellcheck="false" class="c-text-input__input" id="gif_url" />
-                </div>
-              </div>
-              <br>
-              <div class="c-text-input__outer">
-                <u>Width</u>
-                <div class="c-text-input__inner">
-                  <input type="text" placeholder="200" spellcheck="false" class="c-text-input__input" id="gif_width" />
-                </div>
-              </div>
-              <br>
-              <div class="c-text-input__outer">
-                <u>Height</u>
-                <div class="c-text-input__inner">
-                  <input type="text" placeholder="200" spellcheck="false" class="c-text-input__input" id="gif_height" />
-                </div>
-              </div>
-            </div>
             <button id="petSaveButton">Save</button>
           </div>
         </div>
       </div>
       <div class="right">
-        <div class="toggle-features" id="featureFlags">
-          <div class="toggle-features__header">
-            <div class="toggle-features__header-title">Toggle Features</div>
-            <div class="toggle-features__header-description">Enable or disable features of the Primate Pack plugins</div>
-          </div>
-          <hr />
-          <div class="toggle-features__content">${featureHtml}</div>
-          <button id="featureSaveButton">Save</button>
-        </div>
       </div>
     </main>
   </div>
