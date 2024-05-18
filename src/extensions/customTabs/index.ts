@@ -26,8 +26,8 @@ export const setup = () => {
   Caido.commandPalette.register("theprimatepack:settings");
 
   let petHTML = "<img src=\"" + getMonkeSetting("gif_url") + "\"" + " width=" + getMonkeSetting("gif_width") + " height=" + getMonkeSetting("gif_height") + ">" 
-  Caido.sidebar.registerItem(petHTML, "/theprimatepack/activity", {
-    icon: "",
+  Caido.sidebar.registerItem("", "/theprimatepack/activity", {
+    icon: petHTML,
     group: "The Primate Pack",
   });
 

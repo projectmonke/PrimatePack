@@ -165,3 +165,28 @@ export const primatePackSettingsTab = () => {
 
   return container;
 };
+
+const primatePackActivityHTML = () => {
+  return `
+  <div class="even-better__settings" id="evenbetter-settings-content">
+    <header>
+      <div class="header-title"><h1>Activity Tracker</h1></div>
+      <div class="header-description">Track your activity here.</div>
+    </header>
+    <main>
+      <div class="left">    
+      </div>
+      <div class="right">
+      </div>
+    </main>
+  </div>
+  `;
+};
+
+export const primatePackActivityTab = () => {
+  loadCSS({ id: "evenbetter-settings", cssText: evenbetterStyles.toString() });
+  const container = document.createElement("div");
+  container.innerHTML = primatePackActivityHTML();
+  return container;
+};
+
