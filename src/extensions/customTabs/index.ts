@@ -3,6 +3,7 @@ import { primatePackSettingsTab, primatePackActivityTab } from "./primatepackset
 import { getMonkeSetting } from "./primatepacksettings/theprimatepack";
 
 export const setup = () => {
+
   Caido.navigation.addPage("/settings/theprimatepack", {
     body: primatePackSettingsTab(),
   })
@@ -28,12 +29,24 @@ export const setup = () => {
   });
 
   Caido.commandPalette.register("theprimatepack:settings");
+  if (getMonkeSetting("caido_pets_enabled") === "true"){
+    Caido.sidebar.registerItem("", "#", {
+      icon: "",
+      group: `<img id='gifImage' width='200' height='200'>`,
+    });
+    setGif();
+  }
 
-  let petHTML = "<img src=\"" + getMonkeSetting("gif_url") + "\"" + " width=" + getMonkeSetting("gif_width") + " height=" + getMonkeSetting("gif_height") + ">" 
-  Caido.sidebar.registerItem("", "/#", {
-    icon: "",
-    group: petHTML,
-  });
+  var setGif = () => {
+    const gifImageElement = document.getElementById("gifImage") as HTMLImageElement;
+    if (gifImageElement) {
+      gifImageElement.src = getMonkeSetting("gif_url");
+      gifImageElement.width = parseInt(getMonkeSetting("gif_width"));
+      gifImageElement.height = parseInt(getMonkeSetting("gif_height"));
+    } else {
+      setTimeout(setGif, 500);
+    }
+  };
 
   Caido.sidebar.registerItem("Activity", "/theprimatepack/activity", {
     icon: "fas fa-clock",
