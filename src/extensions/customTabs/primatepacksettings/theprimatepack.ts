@@ -173,9 +173,45 @@ const primatePackActivityHTML = () => {
     <header>
       <div class="header-title"><h1>Activity Tracker</h1></div>
       <div class="header-description">Track your activity here.</div>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
     </header>
     <main>
-      <div class="left">    
+      <div class="left">
+      <table class="charts-css bar show-labels show-primary-axis show-data-axes">
+    <caption>Monthly Sales Data</caption>
+    <thead>
+      <tr>
+        <th scope="col">Month</th>
+        <th scope="col">Sales</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">January</th>
+        <td style="--size: 0.6;"><span class="data-label">60%</span></td>
+      </tr>
+      <tr>
+        <th scope="row">February</th>
+        <td style="--size: 0.8;"><span class="data-label">80%</span></td>
+      </tr>
+      <tr>
+        <th scope="row">March</th>
+        <td style="--size: 0.9;"><span class="data-label">90%</span></td>
+      </tr>
+      <tr>
+        <th scope="row">April</th>
+        <td style="--size: 0.7;"><span class="data-label">70%</span></td>
+      </tr>
+      <tr>
+        <th scope="row">May</th>
+        <td style="--size: 1.0;"><span class="data-label">100%</span></td>
+      </tr>
+      <tr>
+        <th scope="row">June</th>
+        <td style="--size: 0.5;"><span class="data-label">50%</span></td>
+      </tr>
+    </tbody>
+  </table>
       </div>
       <div class="right">
       </div>
