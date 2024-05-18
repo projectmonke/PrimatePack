@@ -161,6 +161,7 @@ export const primatePackSettingsTab = () => {
     setMonkeSetting("gif_url", gifUrl);
     setMonkeSetting("gif_width", gifWidth);
     setMonkeSetting("gif_height", gifHeight);
+    location.reload();
   });
 
   return container;
