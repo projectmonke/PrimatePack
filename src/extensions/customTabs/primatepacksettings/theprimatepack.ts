@@ -178,7 +178,6 @@ const primatePackActivityHTML = () => {
     <main>
       <div class="left">
       <table class="charts-css bar show-labels show-primary-axis show-data-axes">
-    <caption>Monthly Sales Data</caption>
     <thead>
       <tr>
         <th scope="col">Month</th>
@@ -214,6 +213,7 @@ const primatePackActivityHTML = () => {
   </table>
       </div>
       <div class="right">
+      <h1>This should be something activity-related</h1>
       </div>
     </main>
   </div>
