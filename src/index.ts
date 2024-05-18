@@ -3,6 +3,8 @@ import * as customTabs from "./extensions/customTabs";
 
 const init = () => {
   customTabs.setup();
+  customTabs.setGif();
+  console.log("[Caido Pets] Setting GIF if enabled.")
 
   EvenBetterAPI.eventManager.on("onPageOpen", () => {
     localStorage.setItem("previousPath", window.location.hash);

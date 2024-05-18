@@ -34,22 +34,21 @@ export const setup = () => {
       icon: "",
       group: `<img id='gifImage' width='200' height='200'>`,
     });
-    setGif();
   }
-
-  var setGif = () => {
-    const gifImageElement = document.getElementById("gifImage") as HTMLImageElement;
-    if (gifImageElement) {
-      gifImageElement.src = getMonkeSetting("gif_url");
-      gifImageElement.width = parseInt(getMonkeSetting("gif_width"));
-      gifImageElement.height = parseInt(getMonkeSetting("gif_height"));
-    } else {
-      setTimeout(setGif, 500);
-    }
-  };
 
   Caido.sidebar.registerItem("Activity", "/theprimatepack/activity", {
     icon: "fas fa-clock",
     group: "The Primate Pack",
   });
+};
+
+export const setGif = () => {
+  const gifImageElement = document.getElementById("gifImage") as HTMLImageElement;
+  if (gifImageElement) {
+    gifImageElement.src = getMonkeSetting("gif_url");
+    gifImageElement.width = parseInt(getMonkeSetting("gif_width"));
+    gifImageElement.height = parseInt(getMonkeSetting("gif_height"));
+  } else {
+    setTimeout(setGif, 500);
+  }
 };
