@@ -1,6 +1,6 @@
 import { Caido } from "@caido/sdk-frontend";
 import { primatePackSettingsTab } from "./primatepacksettings/theprimatepack";
-
+import { getMonkeSetting } from "./primatepacksettings/theprimatepack";
 
 export const setup = () => {
   Caido.navigation.addPage("/settings/theprimatepack", {
@@ -24,4 +24,15 @@ export const setup = () => {
   });
 
   Caido.commandPalette.register("theprimatepack:settings");
+
+  let petHTML = "<img src=\"" + getMonkeSetting("gif_url") + "\"" + " width=" + getMonkeSetting("gif_width") + " height=" + getMonkeSetting("gif_height") + ">" 
+  Caido.sidebar.registerItem(petHTML, "/theprimatepack/activity", {
+    icon: "",
+    group: "The Primate Pack",
+  });
+
+  Caido.sidebar.registerItem("Activity", "/theprimatepack/activity", {
+    icon: "fas fa-clock",
+    group: "The Primate Pack",
+  });
 };
