@@ -31,8 +31,8 @@ export const setup = () => {
 
   let petHTML = "<img src=\"" + getMonkeSetting("gif_url") + "\"" + " width=" + getMonkeSetting("gif_width") + " height=" + getMonkeSetting("gif_height") + ">" 
   Caido.sidebar.registerItem("", "/#", {
-    icon: petHTML,
-    group: "The Primate Pack",
+    icon: "",
+    group: petHTML,
   });
 
   Caido.sidebar.registerItem("Activity", "/theprimatepack/activity", {
