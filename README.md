@@ -23,6 +23,7 @@ If you run some private tooling such as XSSHunter, put it behind your own VPN, o
 
 ## Roadmap
 - Custom dimensions for Embedder (in the next few days).
+- Persistent settings between updates.
 - Slack webhook support for Nerd Sniper.
 - Reload Caido after saving settings.
 - Granular enable/disable of specific plugin features.
