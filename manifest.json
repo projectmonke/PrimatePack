@@ -1,0 +1,20 @@
+{
+  "id": "primatepack",
+  "name": "The Primate Pack",
+  "version": "2.0.0",
+  "description": "A suite of plugins to add your own touch to Caido :)",
+  "author": {
+    "name": "Monke",
+    "email": "monke@wearehackerone.com",
+    "url": "https://www.monke.ie"
+  },
+  "plugins": [
+    {
+      "kind": "frontend",
+      "id": "caido-primate-pack",
+      "name": "Primate Pack",
+      "entrypoint": "frontend/script.js",
+      "style": "frontend/style.css"
+    }
+  ]
+}
