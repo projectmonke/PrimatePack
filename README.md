@@ -28,4 +28,7 @@ If you run some private tooling such as XSSHunter, put it behind your own VPN, o
 - Granular enable/disable of specific plugin features.
 
 ## Known Issues
-- Sometimes the UI can become jumbled and the embeded content gets moved to the bottom of the window. Cause is unknown right now, working on a fix.
+- Please open issues if you have any problems.
+
+## Thanks
+- [Iieitaimus](https://x.com/iieitaimus) for helping me squash some bugs.
