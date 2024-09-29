@@ -1,6 +1,6 @@
 # 🐵 The Primate Pack
 
-A suite of plugins to add your own touch to Caido. The Primate Pack currently has 3 mini-plugins:
+A suite of plugins to add your own touch to Caido. The Primate Pack currently has 3 mini-plugins. After modifying your settings, you may need to reload Caido.
 
 ## Caido Pets
 Add a GIF to the sidebar. The default is a sleeping cat. You can configure the URL of the GIF as well as its dimensions in the Settings menu.
@@ -24,3 +24,5 @@ If you run some private tooling such as XSSHunter, put it behind your own VPN, o
 ## Roadmap
 - Custom dimensions for Embedder (in the next few days).
 - Slack webhook support for Nerd Sniper.
+- Reload Caido after saving settings.
+- Granular enable/disable of specific plugin features.
