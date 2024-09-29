@@ -26,3 +26,6 @@ If you run some private tooling such as XSSHunter, put it behind your own VPN, o
 - Slack webhook support for Nerd Sniper.
 - Reload Caido after saving settings.
 - Granular enable/disable of specific plugin features.
+
+## Known Issues
+- Sometimes the UI can become jumbled and the embeded content gets moved to the bottom of the window. Cause is unknown right now, working on a fix.
