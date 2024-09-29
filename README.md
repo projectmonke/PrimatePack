@@ -1,20 +1,26 @@
-# The Primate Pack
-The Primate Pack is a suite of extensions for Caido.
+# 🐵 The Primate Pack
 
-## Plugins
-- **Caido Pets**: Add a pet or custom GIF to Caido.
+A suite of plugins to add your own touch to Caido. The Primate Pack currently has 3 mini-plugins:
 
-## Requirements
-- This extension can be installed using [EvenBetterExtensions](https://github.com/bebiksior/EvenBetterExtensions).
-- EvenBetter is required for this extension to work.
+## Caido Pets
+Add a GIF to the sidebar. The default is a sleeping cat. You can configure the URL of the GIF as well as its dimensions in the Settings menu.
 
-## How to Install
-- Install EvenBetterExtensions from the above link, and use the 1-Click install to install EvenBetter from it.
-- Then, in the same interface, install the Primate Pack with 1 click.
-- Done!
+## Nerd Sniper
+Send requests to your friends directly via Discord webhooks!
 
-## Roadmap 
-I write code when I get bored, so no estimated date for completion.
-- Notion support
-- Settings for Caido Nerd Sniper
-- Performance Tracker
+### Usage
+1. Ask your friend to provide you with a webhook URL for a text channel in their server.
+2. Go to the Primate Pack settings, and add their Name and URL.
+3. Save your settings, and visit any request tab.
+4. Right click -> Plugins -> Send to (Name).
+5. Done! Your friend will now receive the request in their text channel, with the `Cookie` and `Authorization` headers removed.
+
+## Embedder
+Embed any page in an iframe in Caido! You can change the name of the tab in the sidebar, as well as the URL of the page that is embedded.
+
+### Suggested Usage
+If you run some private tooling such as XSSHunter, put it behind your own VPN, or add a password. Then, set the URL for it in the Primate Pack settings and you're good to go!
+
+## Roadmap
+- Custom dimensions for Embedder (in the next few days).
+- Slack webhook support for Nerd Sniper.
